@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+  <script src="/build/k12-template.js"></script>
+
+  <script type="text/javascript">
+    function initializeComponent() {
+       const component = document.querySelector('app-template');
+       component.data = "TestTitle";
+    }  
+  </script>
+
+</head>
+<body>
+
+  <app-template>
+    <p slot="slot1">
+      Slot1
+    </p>   
+    <p slot="slot2">
+      Slot2
+    </p> 
+    <thead slot="tableHeader">
+      <tr>
+        <th>
+          Header
+        </th>
+      </tr>
+    </thead>
+    <tbody slot="tableBody">
+      <tr>
+        <td>
+          Data Cell
+        </td>
+      </tr>
+    </tbody>
+  </app-template>
+  <hr/>
+  <p>Consuming Component:</p>
+  <app-consuming-component></app-consuming-component>  
+
+  <script>initializeComponent();</script>
+</body>
+</html>

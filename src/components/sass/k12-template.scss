@@ -1,0 +1,13 @@
+@import "./k12-fonts";
+
+$prefix: k12-;
+
+.#{$prefix} {
+    &template {
+        @include k12-font-mixin;
+        
+        font: {
+            size: 14px;
+        }
+    }
+}

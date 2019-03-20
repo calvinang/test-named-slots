@@ -1,0 +1,8 @@
+node_modules
+.stencil
+dist
+www
+package-lock.json
+stencil-storage*.json
+npm-debug.log
+src/*.d.ts
